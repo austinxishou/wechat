@@ -201,17 +201,7 @@ namespace {
             $accessToken = $this->getMockAccessToken();
             $js = new Js($accessToken, $cache);
             $js->setHttp($http);
-            $this->assertEquals('http://current.org', $js->getUrl());
-        }
-    }
-}
-
-namespace EasyWeChat\Support {
-    class Url
-    {
-        public static function current()
-        {
-            return 'http://current.org';
+            $this->assertEquals('http://localhost', $js->getUrl());
         }
     }
 }
