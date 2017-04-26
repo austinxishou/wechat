@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the EasyWeChat.
+ * This file is part of the overtrue/wechat.
  *
  * (c) overtrue <i@overtrue.me>
  *
@@ -9,8 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
+namespace EasyWeChat\Tests\Broadcast;
+
 use EasyWeChat\Broadcast\Broadcast;
 use EasyWeChat\Broadcast\MessageBuilder;
+use EasyWeChat\Tests\TestCase;
 
 class BroadcastMessageBuilderTest extends TestCase
 {

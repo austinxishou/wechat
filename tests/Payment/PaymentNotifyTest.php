@@ -1,10 +1,22 @@
 <?php
 
+/*
+ * This file is part of the overtrue/wechat.
+ *
+ * (c) overtrue <i@overtrue.me>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
+namespace EasyWeChat\Tests\Payment;
+
 use EasyWeChat\Core\Exceptions\FaultException;
 use EasyWeChat\Payment\Merchant;
 use EasyWeChat\Payment\Notify;
 use EasyWeChat\Support\Collection;
 use EasyWeChat\Support\XML;
+use EasyWeChat\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 
 class PaymentNotifyTest extends TestCase
